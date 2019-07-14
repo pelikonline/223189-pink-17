@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__list top-list">
+          <a class="page-header__logo logo">
+            <img class="page-header__logo logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип Pink">
+          </a>
+          <button class="main-nav__button button-open" type="button">
+            Открыть меню
+          </button>
+          <button class="main-nav__button button-close visually-hidden" type="button">
+            Закрыть меню
+          </button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="main-intro">
+        <div class="main-intro__wrapper-image">
+          <h1 class="main-intro__title">Фотографии пользователей</h1>
+          <!-- Здесь будет картинка-фон -->
+        </div>
+      </section>
+    </header>
+    <main class="page-main">
+      <div class="page-main__header">
+        <h2 class="page-main__title">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </h2>
+      </div>
+      <div class="page-main__gallery">
+        <ul class="page-main__gallery-list gallery-list">
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-bridge gallery-list__image--top" src="http://placehold.it/320x137" width="320" height="137" alt="Мост">
+            <span class="gallery-list__top-day">панорама дня</span>
+            <p class="gallery-list__user-name">
+              Анна
+              <small>(5 минут назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>215</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-auto" src="http://placehold.it/280x180" width="280" height="180" alt="Авто">
+            <p class="gallery-list__user-name">
+              Левон
+              <small>(5 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>356</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-drums" src="http://placehold.it/280x180" width="280" height="180" alt="Барабаны">
+            <p class="gallery-list__user-name">
+              Антон
+              <small>(12 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Соседи будут рады!
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>666</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-windows" src="http://placehold.it/280x180" width="280" height="180" alt="Окна">
+            <p class="gallery-list__user-name">
+              Борис
+              <small>(20 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>215</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-kuban" src="http://placehold.it/280x180" width="280" height="180" alt="Кубанская бахча">
+            <p class="gallery-list__user-name">
+              Сергей
+              <small>(25 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Самая кубанская в мире!
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>4</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-mountain" src="http://placehold.it/280x180" width="280" height="180" alt="Горы">
+            <p class="gallery-list__user-name">
+              Максим
+              <small>(40 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Где снег-то?
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>150</span>
+            </p>
+          </li>
+          <li class="gallery-list__item">
+            <img class="gallery-list__image image-aircraft" src="http://placehold.it/280x180" width="280" height="180" alt="Самолет">
+            <p class="gallery-list__user-name">
+              Надежда
+              <small>(45 часов назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Всем GM и взаимные лайки!
+            </p>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>2560</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <a class="page-footer__logo logo">
+          <img class="page-footer__logo logo-image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Pink">
+        </a>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__button" href="#">
+              <img class="social-list__button button-twitter" src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__button" href="#">
+              <img class="social-list__button button-facebook" src="http://placehold.it/9x18" width="9" height="18" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__button" href="#">
+              <img class="social-list__button button-youtube" src="http://placehold.it/15x13" width="15" height="13" alt="Youtube">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <p class="developer__text">
+            Разработано
+          </p>
+          <a href="developer__link">
+            <img class="developer__link link-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
