@@ -7,16 +7,16 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
-  color: #283645;
-}
+  color: @navy;
 
-.page-main__title--inner-page {
-  font-size: 14px;
-  line-height: 30px;
+  &--inner-page {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .page-main__advantage {
-  background-color: #f2f2f2
+  background-color: @lighgrey;
 }
 
 .page-main__list {
@@ -27,7 +27,9 @@
 
 .gallery-list__content-wrapper {
   width: 280px;
-  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background-color: @lighgrey;
 }
 
 .gallery-list__item {
@@ -44,16 +46,11 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #d22856;
+  color: @white;
+  background-color: @pink;
 }
 
 .gallery-list__image {
-  margin: 0;
-  padding: 0;
-}
-
-.gallery-list__content-wrapper {
   margin: 0;
   padding: 0;
 }
@@ -79,14 +76,5 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #d22856;
-}
-
-.button--like {
-  width: 13px;
-  height: 12px;
-  margin: 0;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
+  color: @pink;
 }
