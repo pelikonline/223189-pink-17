@@ -1,0 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  font-family: @main-font;
+  background-color: @navy-deep;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background-color: red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: green;
+  }
+}
