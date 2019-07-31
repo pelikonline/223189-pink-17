@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Пелик](https://up.htmlacademy.ru/adaptive/17/user/223189).
-* Наставник: [Александр Бабченко](https://up.htmlacademy.ru/adaptive/17/user/619357).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
