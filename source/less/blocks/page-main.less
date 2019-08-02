@@ -1,16 +1,17 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  font-family: @font-family;
+  align-items: center;
+  font-family: @main-font;
 }
 
 .page-main__title {
   width: 210px;
-  font-family: @font-family;
+  font-family: @main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
+  text-align: center;
   color: @navy;
 
   &--inner-page {
@@ -19,76 +20,54 @@
   }
 }
 
+.page-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  border: 1px dashed red;
+}
+
 .page-main__advantage {
-  font-family: @font-family;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: @main-font;
   background-color: @lighgrey;
 }
 
 .page-main__list {
   margin: 0;
   padding: 0;
-  font-family: @font-family;
+  font-family: @main-font;
   list-style: none;
 }
 
-.gallery-list__content-wrapper {
-  width: 280px;
-  margin: 0;
-  padding: 0;
-  font-family: @main-font;
-  background-color: @lighgrey;
+@media (min-width: @tablet-width) {
+  .page-main__wrapper {
+    width: @tablet-width;
+  }
+
+  .page-main__title {
+    width: 600px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .page-main__advantage {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: @tablet-width;
+  }
 }
 
-.gallery-list__item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: @main-font;
-}
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    width: @desktop-width;
+  }
 
-.gallery-list__top-day {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  padding: 6px 21px;
-  font-family: @main-font;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: @white;
-  background-color: @pink;
-}
-
-.gallery-list__image {
-  margin: 0;
-  padding: 0;
-  font-family: @main-font;
-}
-
-.gallery-list__user-name {
-  font-family: @main-font;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.gallery-list__user-name small {
-  font-family: @main-font;
-  font-weight: 300;
-}
-
-.gallery-list__user-comment {
-  font-family: @main-font;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.gallery-list__like-stat {
-  font-family: @main-font;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: @pink;
+  .page-main__advantage {
+    width: @desktop-width;
+  }
 }

@@ -8,38 +8,39 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__top top-menu">
-            <a class="page-header__logo logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            </a>
-            <button class="main-nav__button button" type="button">
-              <span class="visually-hidden">Меню</span>
-            </button>
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__top top-menu">
+              <a class="page-header__logo logo" href="index.html">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+              </a>
+              <button class="main-nav__button button" type="button">
+                <span class="visually-hidden">Меню</span>
+              </button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Html Academy</a>
+              </li>
+            </ul>
           </div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Html Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="main-intro">
-        <div class="main-intro__wrapper-image">
-          <h1 class="main-intro__title">Фотографии пользователей</h1>
-          <!-- Здесь будет картинка-фон -->
-        </div>
-      </section>
+        </nav>
+        <section class="main-intro--inner">
+          <div class="main-intro__wrapper-main">
+            <h1 class="main-intro__title">Фотографии пользователей</h1>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="page-main">
       <h2 class="page-main__title page-main__title--inner-page">

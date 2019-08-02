@@ -1,23 +1,23 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
   font-family: @main-font;
   background-color: @navy-deep;
 }
 
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
-  .page-header {
-    width: 660px;
-    background-color: blueviolet;
-    border: 2px blue dashed;
+  .page-header__wrapper {
+    width: @tablet-width;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
-    width: 1200px;
-    background-color: red;
-    border: 2px yellow dashed;
+  .page-header__wrapper {
+    width: 100%;
   }
 }
