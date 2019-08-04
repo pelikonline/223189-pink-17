@@ -3,16 +3,18 @@
   flex-direction: column;
   align-items: center;
   font-family: @main-font;
+  margin: 0;
+  padding: 0;
 
   &--index {
     display: none;
   }
 }
 
-.page-footer__wrap {
-  width: 320px;
+.page-footer__wrapper {
+  width: 280px;
   margin: 0 auto;
-  border: 1px dashed green;
+  padding: 0 20px;
 }
 
 .page-footer__logo {
@@ -53,18 +55,20 @@
     }
   }
 
-  .page-footer__wrap {
+  .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: @tablet-width;
+    width: 620px;
+    padding: 0 20px;
     height: 80px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__wrap {
-    width: @desktop-width;
+  .page-footer__wrapper {
+    width: 940px;
+    padding: 0 10px;
   }
 }

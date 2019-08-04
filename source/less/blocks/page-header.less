@@ -1,23 +1,28 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   font-family: @main-font;
   background-color: @navy-deep;
 }
 
 .page-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
-    width: @tablet-width;
+    width: 620px;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
-    width: 100%;
+    width: 940px;
+    padding: 0 10px;
   }
 }
