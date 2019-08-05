@@ -34,3 +34,24 @@
     text-align: left;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantage-list__image {
+    display: none;
+  }
+
+  .advantage-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .advantage-list__item {
+    width: 200px;
+    margin-right: 30px;
+  }
+
+  .advantage-list__title {
+    width: 130px;
+  }
+}
