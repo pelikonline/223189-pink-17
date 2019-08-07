@@ -1,8 +1,25 @@
 .top-menu {
-  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: @main-font;
   border-top: 1px solid @grey;
   border-bottom: 1px solid @black;
+}
+
+@media (min-width: @tablet-width) {
+  .top-menu {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .top-menu {
+    height: 110px;
+    border: none;
+  }
 }

@@ -1,4 +1,6 @@
 .main-nav {
+  margin: 0;
+  padding: 0;
   font-family: @main-font;
   background-color: @navy;
 }
@@ -11,4 +13,50 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+}
+
+.main-nav__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav__top {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.main-nav__top span {
+  display: block;
+  width: 24px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .main-nav__list {
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
 }
