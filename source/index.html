@@ -14,9 +14,7 @@
             <a class="page-header__logo logo">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
             </a>
-            <button class="main-nav__button button" type="button">
-              <span class="visually-hidden">Меню</span>
-            </button>
+            <button class="main-nav__button button" type="button" aria-label="Меню"></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -35,7 +33,7 @@
         </div>
       </nav>
       <section class="main-intro">
-        <div class="main-intro__wrapper-main">
+        <div class="main-intro__wrapper-intro">
           <h1 class="main-intro__title">Взгляните на жизнь иначе!</h1>
           <div class="main-intro__wrapper-download">
             <a class="main-intro__button button" href="#">
@@ -45,19 +43,19 @@
               <li class="download-list__item">
                 <a class="download-list__platform" href="#">
                   <img class="download-list__platform-image" src="img/logo-apple.svg" width="47" height="56" alt="Apple">
-                  <span class="visually-hidden">Скачать для Apple</span>
+                  <span class="visually-hidden">Apple</span>
                 </a>
               </li>
               <li class="download-list__item">
                 <a class="download-list__platform" href="#">
                   <img class="download-list__platform-image" src="img/logo-android.svg" width="43" height="47" alt="Android">
-                  <span class="visually-hidden">Скачать для Android</span>
+                  <span class="visually-hidden">Android</span>
                 </a>
               </li>
               <li class="download-list__item">
                 <a class="download-list__platform" href="#">
                   <img class="download-list__platform-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
-                  <span class="visually-hidden">Скачать для Microsoft</span>
+                  <span class="visually-hidden">Microsoft</span>
                 </a>
               </li>
             </ul>
@@ -72,14 +70,12 @@
       <div class="page-main__title-wrapper">
         <h2 class="page-main__title">
           Устали от серости мегаполиса?
-          <br>Нам есть, что вам предложить!
+          Нам есть, что вам предложить!
         </h2>
       </div>
       <section class="page-main__advantage">
+        <h3 class="visually-hidden">Преимущества</h3>
         <div class="page-main__advantage-wrapper">
-          <h3>
-            <span class="visually-hidden">Преимущества</span>
-          </h3>
           <ul class="page-main__list advantage-list">
             <li class="advantage-list__item">
               <p class="advantage-list__title">Поднимает настроение</p>
@@ -98,14 +94,16 @@
         </div>
       </section>
       <aside class="page-main__promo">
-        <h3>Эффект на 24 часа!</h3>
-        <p>
-          Британские учёные провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!
-        </p>
-        <a href="#">Узнать больше об исследовании</a>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
-          <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
-        </svg>
+        <div class="page-main__promo-wrapper">
+          <h3 class="page-main__promo-title">Эффект на 24 часа!</h3>
+          <p class="page-main__promo-text">
+            Британские учёные провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#">Узнать больше об исследовании</a>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+          </svg>
+        </div>
       </aside>
     </main>
     <footer class="page-footer--index">
@@ -139,7 +137,6 @@
           </p>
           <a href="page-footer__developer-link">
             <img class="developer__link link-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

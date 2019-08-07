@@ -35,7 +35,7 @@
         </div>
       </nav>
       <section class="main-intro--inner">
-        <div class="main-intro__wrapper-inner">
+        <div class="main-intro__wrapper-intro">
           <h1 class="main-intro__title">Фотографии пользователей</h1>
         </div>
       </section>
@@ -45,26 +45,26 @@
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </h2>
       <div class="page-main__gallery">
+        <div class="gallery-list__item">
+          <img class="gallery-list__image gallery-list__image--top" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Мост">
+          <span class="gallery-list__top-day">панорама дня</span>
+          <div class="gallery-list__content-wrapper">
+            <p class="gallery-list__user-name">
+              Анна
+              <small>(5 минут назад)</small>
+            </p>
+            <p class="gallery-list__user-comment">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+            </p>
+            <button class="gallery-list__button button button--like" type="button">
+              <span class="visually-hidden">Лайк</span>
+            </button>
+            <p class="gallery-list__like-stat">
+              Нравится: <span>215</span>
+            </p>
+          </div>
+        </div>
         <ul class="page-main__list gallery-list">
-          <li class="gallery-list__item">
-            <img class="gallery-list__image gallery-list__image--top" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Мост">
-            <span class="gallery-list__top-day">панорама дня</span>
-            <div class="gallery-list__content-wrapper">
-              <p class="gallery-list__user-name">
-                Анна
-                <small>(5 минут назад)</small>
-              </p>
-              <p class="gallery-list__user-comment">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
-              </p>
-              <button class="gallery-list__button button button--like" type="button">
-                <span class="visually-hidden">Лайк</span>
-              </button>
-              <p class="gallery-list__like-stat">
-                Нравится: <span>215</span>
-              </p>
-            </div>
-          </li>
           <li class="gallery-list__item">
             <img class="gallery-list__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Авто">
             <div class="gallery-list__content-wrapper">
@@ -207,7 +207,6 @@
           </p>
           <a href="page-footer__developer-link">
             <img class="developer__link link-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
