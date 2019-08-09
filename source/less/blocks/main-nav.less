@@ -6,24 +6,35 @@
 }
 
 .main-nav__button {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 2;
+  display: block;
   width: 24px;
   height: 24px;
   margin: 0;
   font-family: @main-font;
-  background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-color: transparent;
 }
 
-.main-nav__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+.main-nav__button svg {
+  fill: @white;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__top {
+  position: relative;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .main-nav__top span {
@@ -37,23 +48,20 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    width: 620px;
-    padding: 0 20px;
-  }
-
   .main-nav__list {
     align-items: center;
+  }
+
+  .main-nav__button {
+    top: 43px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+  .main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 940px;
-    padding: 0 10px;
   }
 
   .main-nav__button {

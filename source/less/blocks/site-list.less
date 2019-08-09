@@ -30,6 +30,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @white;
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: @white;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -49,5 +59,12 @@
   .site-list__item {
     width: auto;
     border: none;
+  }
+
+  .site-list a {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
   }
 }
