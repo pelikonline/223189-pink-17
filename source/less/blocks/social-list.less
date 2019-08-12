@@ -3,4 +3,54 @@
   flex-direction: row;
   justify-content: space-between;
   width: 176px;
+  font-family: @main-font;
+}
+
+.social-list__item {
+  margin: 0;
+}
+
+.social-list__link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border: solid 3px @lighgrey;
+  border-radius: 50%;
+
+  svg {
+    padding: 10px;
+    fill: @pink;
+  }
+
+  &:hover svg {
+    fill: @pink;
+  }
+
+  &:active,
+  &:focus svg {
+    fill: @pink;
+    opacity: 0.3;
+  }
+}
+
+.social-list__link-img {
+  content: "";
+  position: absolute;
+
+  &--twitter {
+    top: 0;
+    left: 5px;
+  }
+
+  &--facebook {
+    top: 3px;
+    left: 8px;
+  }
+
+  &--youtube {
+    top: 3px;
+    left: 5px;
+  }
 }
