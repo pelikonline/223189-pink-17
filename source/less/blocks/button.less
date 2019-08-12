@@ -3,6 +3,7 @@
   padding: 0;
   font-family: @main-font;
   border: none;
+  cursor: pointer;
 
   &--like {
     width: 13px;
@@ -11,5 +12,31 @@
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-color: transparent;
+  }
+
+  &--download {
+    width: 234px;
+    margin-bottom: 30px;
+    padding: 20px 39px 17px 40px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: @white;
+    border: 3px solid @white;
+    border-radius: 25px;
+
+    &:hover {
+      color: @pink;
+      background-color: @white;
+    }
+
+    &:active,
+    &:focus {
+      color: @pink;
+      opacity: 0.3;
+      background-color: @white;
+    }
   }
 }

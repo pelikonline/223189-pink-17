@@ -1,4 +1,17 @@
 .logo {
   margin: 0;
   font-family: @main-font;
+
+  svg {
+    fill: @white;
+  }
+
+  &:hover svg {
+    fill: @pink;
+  }
+
+  &:active svg {
+    fill: @white;
+    opacity: 0.3;
+  }
 }
