@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 176px;
+  width: 172px;
   font-family: @main-font;
 }
 
@@ -11,21 +11,21 @@
 }
 
 .social-list__link {
-  position: relative;
-  display: block;
-  width: 25px;
-  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   border: solid 3px @lighgrey;
   border-radius: 50%;
 
   svg {
-    padding: 10px;
     fill: @pink;
   }
 
-  &:hover svg {
-    fill: @pink;
+  &:hover {
+    border: solid 3px @navy;
   }
 
   &:active,
@@ -33,24 +33,27 @@
     fill: @pink;
     opacity: 0.3;
   }
+
+  &:active,
+  &:focus {
+    border: solid 3px @lighgrey;
+    opacity: 0.9;
+  }
 }
 
 .social-list__link-img {
-  content: "";
-  position: absolute;
-
   &--twitter {
-    top: 0;
-    left: 5px;
+    width: 18px;
+    height: 14px;
   }
 
   &--facebook {
-    top: 3px;
-    left: 8px;
+    width: 9px;
+    height: 18px;
   }
 
   &--youtube {
-    top: 3px;
-    left: 5px;
+    width: 15px;
+    height: 13px;
   }
 }

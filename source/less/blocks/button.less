@@ -15,9 +15,10 @@
   }
 
   &--download {
-    width: 234px;
+    display: block;
+    width: 280px;
     margin-bottom: 30px;
-    padding: 20px 39px 17px 40px;
+    padding: 20px 0 17px 0;
     font-family: inherit;
     font-size: 18px;
     line-height: 18px;
@@ -25,7 +26,7 @@
     text-align: center;
     color: @white;
     border: 3px solid @white;
-    border-radius: 25px;
+    border-radius: 30px;
 
     &:hover {
       color: @pink;
@@ -37,6 +38,26 @@
       color: @pink;
       opacity: 0.3;
       background-color: @white;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--download {
+      width: 300px;
+      margin-bottom: 45px;
+      padding: 19px 0 16px 0;
+      font-size: 21px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width-width) {
+  .button {
+    &--download {
+      margin-bottom: 65px;
     }
   }
 }
