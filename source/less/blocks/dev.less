@@ -13,8 +13,8 @@
   font-family: inherit;
   color: @black;
 
-  &:hover {
-    color: @black;
+  &:hover + .dev__link-img svg {
+    color: green;
   }
 
   &:active,
@@ -30,18 +30,7 @@
   width: 27px;
   height: 34px;
   fill: @pink;
-
-  &:hover {
-    fill: @black;
-  }
-
-  &:active,
-  &:focus {
-    color: @black;
-    opacity: 0.3;
-  }
 }
-
 
 @media (min-width: @tablet-width) {
   .dev {
