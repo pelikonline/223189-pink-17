@@ -1,0 +1,47 @@
+.promo {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  background-color: @lighgrey;
+}
+
+.promo__title {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__text {
+  display: block;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+    display: block;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    margin: 0;
+    padding: 0;
+    background-color: @lighgrey;
+  }
+
+  .promo svg {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+  }
+}

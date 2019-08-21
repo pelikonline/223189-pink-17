@@ -13,13 +13,14 @@
   font-family: inherit;
   color: @black;
 
-  &:hover + .dev__link-img svg {
-    color: green;
+  &:hover .dev__link-img {
+    fill: @navy;
   }
 
-  &:active,
-  &:focus {
-    color: @black;
+  &:active .dev__link-img,
+  &:focus .dev__link-img {
+    color: @navy;
+    opacity: 0.3;
   }
 }
 
