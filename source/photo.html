@@ -87,26 +87,32 @@
       </h2>
       <section class="gallery">
         <div class="gallery__panorama">
-          <img class="gallery__panorama-image gallery__panorama-image--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Мост">
-          <img class="gallery__panorama-image gallery__panorama-image--tablet" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="Мост">
-          <img class="gallery__panorama-image gallery__panorama-image--desktop" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Мост">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="gallery__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+          </picture>
           <span class="gallery__top-day">панорама дня</span>
-        </div>
-        <div class="gallery__wrapper gallery__wrapper--panorama">
-          <p class="gallery__user-name">
-            Анна
-            <small>(5 минут назад)</small>
-          </p>
-          <p class="gallery__user-comment">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
-          </p>
-          <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-          <p class="gallery__like-stat">Нравится: 215</p>
+          <div class="gallery__wrapper gallery__wrapper--panorama">
+            <p class="gallery__user-name">
+              Анна
+              <small>(5 минут назад)</small>
+            </p>
+            <p class="gallery__user-comment">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+            </p>
+            <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
+            <span class="gallery__like-stat">Нравится: 215</span>
+          </div>
         </div>
         <div class="container">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Авто">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Авто">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Левон
@@ -116,11 +122,15 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 356</p>
+                <span class="gallery__like-stat">Нравится: 356</span>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Антон
@@ -130,11 +140,15 @@
                   Соседи будут рады!
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 666</p>
+                <span class="gallery__like-stat">Нравится: 666</span>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окна">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Борис
@@ -144,11 +158,15 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 215</p>
+                <span class="gallery__like-stat">Нравится: 215</span>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Бахча">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Бахча">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Сергей
@@ -158,11 +176,15 @@
                   Самая кубанская в мире!
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 4</p>
+                <span class="gallery__like-stat">Нравится: 4</span>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Горы">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Максим
@@ -172,11 +194,15 @@
                   Где снег-то?
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 150</p>
+                <span class="gallery__like-stat">Нравится: 150</span>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Самолет">
+              </picture>
               <div class="gallery__wrapper">
                 <p class="gallery__user-name">
                   Надежда
@@ -186,7 +212,7 @@
                   Всем GM и взаимные лайки!
                 </p>
                 <button class="gallery__button button button--like" type="button" aria-label="Лайк"></button>
-                <p class="gallery__like-stat">Нравится: 2560</p>
+                <span class="gallery__like-stat">Нравится: 2560</span>
               </div>
             </li>
           </ul>

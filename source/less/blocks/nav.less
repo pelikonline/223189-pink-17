@@ -1,4 +1,5 @@
 .nav {
+  z-index: 1;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -9,12 +10,13 @@
 .nav__wrapper {
   position: relative;
   width: 320px;
-  min-height: 69px;
   margin: 0 auto;
 }
 
 .nav--closed {
+  z-index: 1;
   height: 66px;
+  margin-bottom: -66px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -75,14 +77,6 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-
-  &:hover {
-    fill: @pink;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .nav--closed .nav__toggle::before {
@@ -95,12 +89,16 @@
   background-image: url("../img/icon-menu-burger.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
 
-  &:hover {
+.nav__toggle::before svg {
+  fill: @white;
+
+  &:hover svg {
     fill: @pink;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -150,6 +148,7 @@
 @media (min-width: @tablet-width) {
   .nav--closed {
     height: 110px;
+    margin-bottom: -110px;
   }
 
   .nav__wrapper {
@@ -189,6 +188,8 @@
 
 @media (min-width: @desktop-width) {
   .nav--opened {
+    z-index: 1;
+    margin-bottom: -110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
