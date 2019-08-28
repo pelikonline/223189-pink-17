@@ -33,11 +33,22 @@
   display: block;
   margin-bottom: 30px;
   padding: 0;
+
+  &--replay {
+    display: none;
+  }
+
+  &--photo {
+    width: 253px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-main__title {
+    width: 590px;
     font-size: 40px;
+    font-weight: 300;
     line-height: 50px;
 
     &--inner-page {
@@ -51,6 +62,19 @@
 
   .page-main__title-break {
     display: none;
+
+    &--replay {
+      display: block;
+      margin: 0;
+    }
+
+    &--photo {
+      display: block;
+      width: 418px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
   }
 }
 

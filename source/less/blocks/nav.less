@@ -65,8 +65,29 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  svg {
+    fill: @white;
+  }
+
+  &:hover svg {
+    fill: @pink;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &--open {
+    display: none;
+  }
+
+  &--close {
+    display: block;
+  }
 }
 
+/*
 .nav--opened .nav__toggle::before {
   content: "";
   position: absolute;
@@ -102,6 +123,7 @@
     opacity: 0.3;
   }
 }
+*/
 
 .nav__list {
   width: 100%;
