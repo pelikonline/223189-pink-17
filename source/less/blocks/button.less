@@ -8,16 +8,20 @@
   &--like {
     width: 13px;
     height: 12px;
-    margin: 0;
+    margin: 19px;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-color: transparent;
+
+    svg {
+      fill: @pink;
+    }
   }
 
   &--download {
+    z-index: 2;
     display: block;
     width: 280px;
-    margin-bottom: 30px;
     padding: 20px 0 17px 0;
     font-family: inherit;
     font-size: 18px;
@@ -54,7 +58,7 @@
   }
 }
 
-@media (min-width: @desktop-width-width) {
+@media (min-width: @desktop-width) {
   .button {
     &--download {
       margin-bottom: 65px;

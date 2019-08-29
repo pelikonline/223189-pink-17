@@ -4,18 +4,23 @@
   padding: 0;
   font-family: @main-font;
   background-color: @navy;
+
+  &--closed {
+    z-index: 20;
+    height: 66px;
+    margin-bottom: -66px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--opened {
+    z-index: 20;
+  }
 }
 
 .nav__wrapper {
   position: relative;
   width: 320px;
-  min-height: 69px;
   margin: 0 auto;
-}
-
-.nav--closed {
-  height: 66px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .nav__logo {
@@ -55,7 +60,7 @@
   position: absolute;
   top: 0;
   right: 20px;
-  width: 50px;
+  width: 24px;
   height: 24px;
   margin: 0;
   padding: 0;
@@ -63,45 +68,37 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
 
-.nav--opened .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  svg {
+    fill: @white;
+  }
 
-  &:hover {
+  &:hover svg {
     fill: @pink;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
   }
-}
 
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  &:hover {
-    fill: @pink;
+  &--closed .nav__toggle-burger {
+    display: none;
   }
 
-  &:active {
-    opacity: 0.3;
+  &--closed .nav__toggle-cross {
+    display: block;
+  }
+
+  &--open {
+    width: 50px;
+  }
+
+  &--open .nav__toggle-burger {
+    display: block;
+  }
+
+  &--open .nav__toggle-cross {
+    display: none;
   }
 }
 
@@ -148,8 +145,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .nav--closed {
-    height: 110px;
+  .nav {
+    &--closed {
+      height: 110px;
+      margin-bottom: -110px;
+    }
   }
 
   .nav__wrapper {
@@ -189,6 +189,7 @@
 
 @media (min-width: @desktop-width) {
   .nav--opened {
+    margin-bottom: -110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
@@ -253,6 +254,7 @@
 
     &--current {
       position: relative;
+      display: block;
     }
 
     &--current::before {
