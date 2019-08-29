@@ -8,10 +8,14 @@
   &--like {
     width: 13px;
     height: 12px;
-    margin: 0;
+    margin: 19px;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-color: transparent;
+
+    svg {
+      fill: @pink;
+    }
   }
 
   &--download {
@@ -40,22 +44,6 @@
       background-color: @white;
     }
   }
-
-  &--crop svg {
-    width: 44px;
-    height: 44px;
-    fill: @pink;
-  }
-
-  &--fill svg {
-    width: 48px;
-    height: 43px;
-  }
-
-  &--contrast svg {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,11 +54,6 @@
       padding: 19px 0 16px 0;
       font-size: 21px;
       line-height: 21px;
-
-      &--crop {
-        width: 22px;
-        height: 22px;
-      }
     }
   }
 }
@@ -79,11 +62,6 @@
   .button {
     &--download {
       margin-bottom: 65px;
-
-      &--crop {
-        width: 44px;
-        height: 44px;
-      }
     }
   }
 }

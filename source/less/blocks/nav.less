@@ -1,23 +1,26 @@
 .nav {
-  z-index: 1;
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: @main-font;
   background-color: @navy;
+
+  &--closed {
+    z-index: 20;
+    height: 66px;
+    margin-bottom: -66px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--opened {
+    z-index: 20;
+  }
 }
 
 .nav__wrapper {
   position: relative;
   width: 320px;
   margin: 0 auto;
-}
-
-.nav--closed {
-  z-index: 1;
-  height: 66px;
-  margin-bottom: -66px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .nav__logo {
@@ -57,7 +60,7 @@
   position: absolute;
   top: 0;
   right: 20px;
-  width: 50px;
+  width: 24px;
   height: 24px;
   margin: 0;
   padding: 0;
@@ -78,52 +81,26 @@
     opacity: 0.3;
   }
 
-  &--open {
+  &--closed .nav__toggle-burger {
     display: none;
   }
 
-  &--close {
+  &--closed .nav__toggle-cross {
     display: block;
   }
-}
 
-/*
-.nav--opened .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.nav__toggle::before svg {
-  fill: @white;
-
-  &:hover svg {
-    fill: @pink;
+  &--open {
+    width: 50px;
   }
 
-  &:active svg {
-    opacity: 0.3;
+  &--open .nav__toggle-burger {
+    display: block;
+  }
+
+  &--open .nav__toggle-cross {
+    display: none;
   }
 }
-*/
 
 .nav__list {
   width: 100%;
@@ -168,9 +145,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .nav--closed {
-    height: 110px;
-    margin-bottom: -110px;
+  .nav {
+    &--closed {
+      height: 110px;
+      margin-bottom: -110px;
+    }
   }
 
   .nav__wrapper {
@@ -210,7 +189,6 @@
 
 @media (min-width: @desktop-width) {
   .nav--opened {
-    z-index: 1;
     margin-bottom: -110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
