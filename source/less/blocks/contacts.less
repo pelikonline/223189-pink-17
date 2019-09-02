@@ -1,0 +1,23 @@
+.contacts {
+  margin: 0 auto;
+}
+
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 49px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}
