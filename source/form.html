@@ -97,6 +97,120 @@
         </h1>
       </section>
     </header>
+    <main class="page-main">
+      <h2 class="page-main__title page-main__title--inner-form">
+        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+        <span>Пожалуйста, заполните форму ниже:</span>
+      </h2>
+      <form class="page-main__form-contest form-contest" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-contest__name-wrapper">
+          <fieldset class="form-contest__fieldset form-contest__fieldset--name">
+            <ul class="form-contest__list">
+              <li class="form-contest__item-name">
+                <label class="form-contest__label" for="lastname">Фамилия</label>
+                <input class="form-contest__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="form-contest__item-name">
+                <label class="form-contest__label" for="firstname">Имя</label>
+                <input class="form-contest__input" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="form-contest__item-name">
+                <label class="form-contest__label" for="middlename">Отчество</label>
+                <input class="form-contest__input" type="text" id="middlename" name="middlename" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-contest__progress-wrapper">
+          <fieldset class="form-contest__fieldset form-contest__fieldset--progress">
+            <legend class="form-contest__legend">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="form-contest__list">
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="selfie" name="progress" value="selfie" checked="checked">
+                <label class="form-contest__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="burnt" name="progress" value="burnt" checked="checked">
+                <label class="form-contest__label-checkbox" for="burnt">Обгорел на пляже</label>
+              </li>
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="see" name="progress" value="see">
+                <label class="form-contest__label-checkbox form-contest__label-checkbox--nocheck" for="see">Видел Чака Норриса</label>
+              </li>
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="buy" name="progress" value="buy">
+                <label class="form-contest__label-checkbox form-contest__label-checkbox--nocheck" for="buy">Накупил сувениров</label>
+              </li>
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="kept" name="progress" value="kept" checked="checked">
+                <label class="form-contest__label-checkbox" for="kept">Удержал башню</label>
+              </li>
+              <li class="form-contest__item-progress">
+                <input class="form-contest__checkbox visually-hidden" type="checkbox" id="smash" name="progress" value="smash">
+                <label class="form-contest__label-checkbox form-contest__label-checkbox--nocheck" for="smash">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-contest__contacts-wrapper">
+          <fieldset class="form-contest__fieldset form-contest__fieldset--contacts">
+            <legend class="form-contest__legend form-contest__legend--contacts">
+              Контактная информация
+            </legend>
+            <ul class="form-contest__list">
+              <li class="form-contest__item-name form-contest__item-name--contacts">
+                <label class="form-contest__label form-contest__label--contacts" for="phone">Номер телефона</label>
+                <input class="form-contest__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form-contest__item-name form-contest__item-name--contacts">
+                <label class="form-contest__label form-contest__label--contacts" for="email">Номер телефона</label>
+                <input class="form-contest__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-contest__platforms-wrapper">
+          <fieldset class="form-contest__fieldset form-contest__fieldset--platforms">
+            <legend class="form-contest__legend">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="form-contest__list">
+              <li class="form-contest__item-platforms">
+                <input class="form-contest__radio visually-hidden" type="radio" id="apple" name="platforms" value="1" checked="checked">
+                <label class="form-contest__label-radio" for="apple">Pink для iOS</label>
+              </li>
+              <li class="form-contest__item-platforms">
+                <input class="form-contest__radio visually-hidden" type="radio" id="android" name="platforms" value="2">
+                <label class="form-contest__label-radio form-contest__label-radio--noradio" for="android">Pink на Android</label>
+              </li>
+              <li class="form-contest__item-platforms">
+                <input class="form-contest__radio visually-hidden" type="radio" id="windows" name="platforms" value="3">
+                <label class="form-contest__label-radio form-contest__label-radio--noradio" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-contest__comment-wrapper">
+          <fieldset class="form-contest__fieldset form-contest__fieldset--comment">
+            <legend class="form-contest__legend form-contest__legend--comment">
+              Опишите свои эмоции
+            </legend>
+            <textarea class="form-contest__textarea form-contest__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </textarea>
+          </fieldset>
+        </div>
+        <div class="form-contest__button-wrapper">
+          <button class="form-contest__button button button--contest" type="submit">
+            Отправить форму
+          </button>
+          <p class="form-contest__footnote">
+            <span>*</span> &mdash; обязательные поля
+          </p>
+        </div>
+      </form>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrap container">
         <a class="page-footer__logo logo logo--footer" href="index.html">
