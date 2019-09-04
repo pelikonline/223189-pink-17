@@ -112,7 +112,6 @@
 
   &--panorama {
     width: 252px;
-    min-height: 141px;
     margin-bottom: 20px;
     padding: 18px 12px 20px 17px;
   }
@@ -210,10 +209,10 @@
     &--panorama {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      width: 620px;
+      justify-content: end;
+      width: 564px;
       margin-bottom: 50px;
-      padding: 24px 23px 20px 27px;
+      padding: 24px 29px 25px 27px;
     }
   }
 
@@ -264,7 +263,6 @@
 
     &--panorama {
       order: 20;
-      align-items: end;
       margin: 0;
     }
   }
@@ -275,7 +273,7 @@
 
     &--panorama {
       margin-right: 17px;
-      margin-left: 190px;
+      margin-left: 194px;
     }
   }
 }
@@ -284,7 +282,12 @@
   .gallery__panorama {
     &::before {
       top: 54px;
-      right: 130px;
+      right: 110px;
+    }
+
+    picture {
+      width: 100%;
+      min-height: 506px;
     }
   }
 
@@ -307,9 +310,9 @@
     padding: 22px 33px 23px 27px;
 
     &--panorama {
-      width: 863px;
+      width: 881px;
       margin-bottom: 50px;
-      padding: 0;
+      padding: 24px 32px 22px 27px;
     }
   }
 
@@ -337,6 +340,13 @@
   .gallery__user-comment {
     &--panorama {
       width: 880px;
+      min-height: 24px;
+    }
+  }
+
+  .gallery__like-stat {
+    &--panorama {
+      margin-left: 510px;
     }
   }
 }

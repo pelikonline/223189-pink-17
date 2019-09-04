@@ -65,6 +65,8 @@
 }
 
 .page-main__form-contest {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -150,5 +152,11 @@
         display: inline;
       }
     }
+  }
+
+  .page-main__form-contest {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 10px;
   }
 }

@@ -12,6 +12,10 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  &--closed + section {
+    padding-top: 66px;
+  }
+
   &--opened {
     z-index: 20;
   }
@@ -151,6 +155,10 @@
       height: 110px;
       margin-bottom: -110px;
     }
+
+    &--closed + section {
+      padding-top: 112px;
+    }
   }
 
   .nav__wrapper {
@@ -189,9 +197,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .nav--opened {
-    margin-bottom: -208px;
-    background-color: rgba(0, 0, 0, 0.3);
+  .nav {
+    &--opened {
+      margin-bottom: -208px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--closed + section {
+      padding-top: 0;
+    }
   }
 
   .nav__wrapper {
