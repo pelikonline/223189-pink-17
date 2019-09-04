@@ -123,7 +123,7 @@
         </div>
         <div class="form-contest__progress-wrapper">
           <fieldset class="form-contest__fieldset form-contest__fieldset--progress">
-            <legend class="form-contest__legend">
+            <legend class="form-contest__legend form-contest__legend--progress">
               Ваши безбашенные достижения в путешествии
             </legend>
             <ul class="form-contest__list form-contest__list--desktop">
@@ -165,7 +165,7 @@
                 <input class="form-contest__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form-contest__item-name form-contest__item-name--contacts form-contest__item-name--email">
-                <label class="form-contest__label form-contest__label--contacts" for="email">Номер телефона</label>
+                <label class="form-contest__label form-contest__label--contacts" for="email">Адрес почты</label>
                 <input class="form-contest__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
@@ -173,7 +173,7 @@
         </div>
         <div class="form-contest__platforms-wrapper">
           <fieldset class="form-contest__fieldset form-contest__fieldset--platforms">
-            <legend class="form-contest__legend">
+            <legend class="form-contest__legend form-contest__legend--platforms">
               С каким приложением путешествовали?
             </legend>
             <ul class="form-contest__list">
@@ -197,8 +197,7 @@
             <legend class="form-contest__legend form-contest__legend--comment">
               Опишите свои эмоции
             </legend>
-            <textarea class="form-contest__textarea form-contest__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+            <textarea class="form-contest__textarea form-contest__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
         <div class="form-contest__button-wrapper">
@@ -206,7 +205,7 @@
             Отправить форму
           </button>
           <p class="form-contest__footnote">
-            <span>*</span> &mdash; обязательные поля
+            <span class="form-contest__footnote-reference">*</span> &#8212; обязательные <span class="form-contest__footnote-subtext">для заполнения</span> поля
           </p>
         </div>
       </form>
