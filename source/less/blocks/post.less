@@ -51,6 +51,12 @@
   background-color: @lighgrey;
 }
 
+.post__editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .post__editor-list {
   display: flex;
   flex-direction: row;
@@ -70,6 +76,24 @@
   padding: 0 25px 50px 15px;
 }
 
+.post__editor-button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  fill: @grey;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+
+  &--active {
+    fill: @pink;
+  }
+}
+
+.post__editor-icon {
+  display: block;
+}
+
 .post__editor-range {
   position: absolute;
   top: 75px;
@@ -86,7 +110,7 @@
   }
 }
 
-.post__editor-range-button {
+.post__range-button {
   content: "";
   position: absolute;
   display: block;
@@ -95,29 +119,11 @@
   width: 15px;
   height: 15px;
   padding: 0;
-  font-family: @main-font;
+  font-family: inherit;
   background-color: @white;
   border: 2px solid @pink;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.post__editor-button {
-  margin: 0;
-  padding: 0;
-  font-family: @main-font;
-  fill: @grey;
-  background-color: unset;
-  border: none;
-  cursor: pointer;
-
-  &--active {
-    fill: @pink;
-  }
-}
-
-.post__editor-icon {
-  display: block;
 }
 
 .post__button-wrapper {

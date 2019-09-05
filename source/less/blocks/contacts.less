@@ -2,10 +2,9 @@
   margin: 0 auto;
 }
 
-.contacts__map {
+.contacts__map-wrapper {
   position: relative;
   overflow: hidden;
-  height: 200px;
 
   &::before {
     content: "";
@@ -19,5 +18,28 @@
     background-size: 100% 33px;
     background-position: 50% 0;
     background-repeat: no-repeat;
+  }
+}
+
+.contacts__map-iframe {
+  width: 320px;
+  height: auto;
+  border: none;
+}
+
+.map__map-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    margin: 0;
   }
 }
