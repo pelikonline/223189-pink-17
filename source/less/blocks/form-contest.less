@@ -544,10 +544,24 @@
   .form-contest__item-progress {
     width: 260px;
 
-    &:nth-child(1) {
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-left: 22px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5) {
       order: 1;
     }
 
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      order: 2;
+    }
+
+    /*
     &:nth-child(2) {
       order: 2;
     }
@@ -567,6 +581,8 @@
     &:nth-child(6) {
       order: 2;
     }
+
+     */
   }
 
   .form-contest__fieldset {

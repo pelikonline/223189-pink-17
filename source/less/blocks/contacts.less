@@ -1,4 +1,5 @@
 .contacts {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -22,12 +23,20 @@
 }
 
 .contacts__map-iframe {
-  width: 320px;
-  height: auto;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  height: 200px;
   border: none;
 }
 
-.map__map-image {
+.contacts__map-picture {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+
+.contacts__map-image {
   width: 100%;
   height: auto;
 }
