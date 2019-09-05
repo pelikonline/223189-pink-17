@@ -81,14 +81,12 @@
     padding: 0 20px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
-    /*
-    (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("img/bg-back-tablet@2x.jpg");
-    }
-     */
-
     &--off {
       padding-top: 0;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 

@@ -6,16 +6,12 @@
   cursor: pointer;
 
   &--like {
+    display: block;
     width: 13px;
     height: 12px;
-    margin: 19px;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-color: transparent;
-
-    svg {
-      fill: @pink;
-    }
   }
 
   &--download {
@@ -44,6 +40,19 @@
       background-color: @white;
     }
   }
+
+  &--contest {
+    width: 100%;
+    padding: 16px 15px;
+    border-radius: 2px;
+    font-family: @main-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: @white;
+    background-color: @green;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -54,6 +63,10 @@
       padding: 19px 0 16px 0;
       font-size: 21px;
       line-height: 21px;
+    }
+
+    &--contest {
+      width: 300px;
     }
   }
 }
