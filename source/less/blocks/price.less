@@ -1,7 +1,8 @@
 .price {
+  position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 91px 0 0 0;
   font-family: @main-font;
   background-color: @lighgrey;
 
@@ -11,6 +12,8 @@
   }
 
   svg {
+    position: absolute;
+    top: 0;
     display: block;
     width: 100%;
     height: auto;
@@ -30,12 +33,16 @@
 }
 
 .price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: 940px;
   margin-bottom: 98px;
   table-layout: fixed;
   line-height: 30px;
   text-align: center;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .price__table-title {
