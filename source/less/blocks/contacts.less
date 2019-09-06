@@ -8,8 +8,8 @@
 }
 
 .contacts__title {
-  margin-top: 24px;
-  margin-bottom: 35px;
+  width: 224px;
+  margin: 24px auto 35px auto;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
@@ -72,24 +72,19 @@
   position: relative;
   overflow: hidden;
 
-  &::before {
-    content: "";
+  svg {
     position: absolute;
     z-index: 20;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 49px;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-size: 100% 33px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+    left: -120px;
+    height: 33px;
+    fill: @white;
   }
 }
 
 .contacts__map-iframe {
   position: relative;
-  z-index: 20;
+  z-index: 10;
   width: 100%;
   height: 200px;
   border: none;

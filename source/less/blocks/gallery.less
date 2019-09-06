@@ -26,7 +26,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: @main-font;
   list-style: none;
 }
 
@@ -38,7 +37,6 @@
   width: 300px;
   margin-bottom: 20px;
   padding: 0;
-  font-family: inherit;
 }
 
 .gallery__photo-link {
@@ -57,12 +55,15 @@
       right: 20px;
       display: block;
       padding: 5px 22px;
-      font-family: inherit;
       font-size: 12px;
       line-height: 24px;
       text-transform: uppercase;
       color: @white;
       background-color: @pink;
+    }
+
+    picture {
+      display: flex;
     }
   }
 }
@@ -95,7 +96,6 @@
   width: 240px;
   margin: 0;
   padding: 18px 23px 20px 17px;
-  font-family: inherit;
   background-color: @lighgrey;
 
   &--panorama {
@@ -109,7 +109,6 @@
   order: 10;
   margin: 0;
   padding: 0;
-  font-family: inherit;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -125,7 +124,6 @@
 .gallery__user-name small {
   margin: 0;
   padding: 0;
-  font-family: inherit;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -135,7 +133,6 @@
   min-height: 25px;
   margin: 0 0 8px 0;
   padding: 0;
-  font-family: inherit;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -160,7 +157,6 @@
 .gallery__like-stat {
   margin-left: 19px;
   padding: 0;
-  font-family: inherit;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;

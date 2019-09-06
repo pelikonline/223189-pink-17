@@ -10,17 +10,17 @@
     margin: 0;
     padding: 0;
   }
+}
 
-  svg {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    fill: @white;
-  }
+.price__triangle {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  fill: @white;
 }
 
 .price__wrapper {
@@ -35,7 +35,7 @@
 .price__table {
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-27%);
   width: 940px;
   margin-bottom: 98px;
   table-layout: fixed;
@@ -74,6 +74,89 @@
 }
 
 .price__value {
+  position: relative;
+  text-align: left;
   background-color: @white;
   border: 2px solid @grey;
+}
+
+.price__value-mobile {
+  display: inline-block;
+  margin-left: 22px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__function {
+  position: absolute;
+  right: 19px;
+  display: inline-block;
+
+  &--yes {
+    top: 18px;
+  }
+
+  &--no {
+    top: 19px;
+  }
+}
+
+.price__icon {
+  display: block;
+  margin: 0;
+  fill: @black;
+
+  &--yes {
+    width: 31px;
+    height: 21px;
+    fill: @darkgreen;
+  }
+
+  &--no {
+    width: 26px;
+    height: 26px;
+    fill: @red;
+  }
+}
+
+.price__slider {
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.price__toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin: 0 13px 0 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @red;
+  cursor: pointer;
+
+  &:nth-child(3) {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: @grey;
+  }
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    border: 3px solid @black;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
 }
