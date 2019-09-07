@@ -1,21 +1,27 @@
 .advantage {
+  position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 50px 0 0 0;
   font-family: @main-font;
   background-color: @lighgrey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 32px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
-.advantage svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  fill: @white;
-}
-
-.advantage h3 {
+.advantage__title {
   margin: 0;
   padding: 0;
 }
@@ -30,13 +36,28 @@
 }
 
 .advantage__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin: 0;
-  padding: 47px 0 45px 0;
+  padding: 47px 20px 285px 20px;
   font-family: inherit;
   list-style: none;
+  background-image: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-position: 50% 110%;
+    background-size: 157px 320px;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantage__item {
@@ -47,11 +68,6 @@
   margin: 0 0 15px 0;
   font-family: inherit;
   text-align: center;
-
-  &--three {
-    position: relative;
-    padding-bottom: 309px;
-  }
 }
 
 .advantage__item-title {
@@ -70,13 +86,6 @@
   font-weight: 400;
 }
 
-.advantage__item-image {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 150px;
-}
-
 @media (min-width: @tablet-width) {
   .advantage__wrapper {
     flex-direction: row-reverse;
@@ -85,9 +94,28 @@
     padding: 0;
   }
 
+  .advantage__list {
+    z-index: 20;
+    align-items: flex-end;
+    padding: 24px 0 0 240px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 0 -50px;
+    background-size: 268px 481px;
+    background-repeat: no-repeat;
+  }
+
   .advantage__item {
-    width: 350px;
+    width: 310px;
+    margin-bottom: 18px;
     text-align: left;
+
+    &--three {
+      margin-bottom: 25px;
+    }
+  }
+
+  .advantage__text-break {
+    display: block;
   }
 }
 

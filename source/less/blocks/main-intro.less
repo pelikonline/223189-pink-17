@@ -13,23 +13,24 @@
   background-size: cover;
 
   &--off {
-    padding-top: 490px;
+    padding-top: 395px;
     background-position: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 109px;
+    left: calc(50% - 160px);
+    bottom: 0;
+    width: 280px;
+    height: 314px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 }
 
-.main-intro::before {
-  content: "";
-  position: absolute;
-  top: 205px;
-  left: calc(50% - 160px);
-  bottom: 0;
-  width: 280px;
-  height: 314px;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
 
 .main-intro__download {
   display: block;
@@ -40,34 +41,20 @@
   background-color: @navy;
 }
 
-
 .main-intro__title {
-  display: block;
-  justify-content: center;
-  width: 230px;
-  margin: 103px auto 0 auto;
-  padding: 0;
-  font-family: inherit;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
-  color: @white;
-
-  &--index {
-    display: block;
-  }
+  display: none;
 }
 
 .main-intro__button {
   display: block;
-  margin: 28px auto 32px auto;
+  margin: 28px auto 0 auto;
 }
 
 .main-intro__description {
   display: block;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 30px auto;
   padding: 0;
+  text-align: center;
   width: 231px;
   font-family: inherit;
   font-size: 14px;
@@ -98,23 +85,44 @@
     width: 660px;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: 700px 545px;
     background-position: 0 0;
     background-repeat: no-repeat;
   }
 
   .main-intro__download {
     z-index: 10;
-    padding-right: 400px;
+    padding: 93px 400px 80px 0;
     background-color: unset;
   }
 
   .main-intro__title {
     display: block;
-    width: 190px;
-    margin-bottom: 40px;
-    padding: 63px 40px 5px 40px;
+    width: 200px;
+    margin-top: 0;
+    padding: 0 50px;
     font-size: 40px;
-    line-height: 50px;
+    font-weight: 300;
+    line-height: 48px;
+    margin-bottom: 31px;
+    text-align: center;
+    color: @white;
+  }
+
+  .main-intro__button {
+    display: block;
+    margin: 0;
+  }
+
+  .main-intro__description {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    width: 300px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: @white;
   }
 }
 
@@ -135,14 +143,20 @@
   }
 
   .main-intro__download {
-    padding-right: 600px;
+    z-index: 10;
+    padding: 93px 400px 80px 0;
+    background-color: unset;
   }
 
   .main-intro__title {
     width: 260px;
-    margin-top: 231px;
-    padding: 0 20px 50px 20px;
-    font-size: 50px;
-    line-height: 60px;
+    margin-top: 0;
+    padding: 0 30px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 31px;
+    text-align: center;
+    color: @white;
   }
 }
