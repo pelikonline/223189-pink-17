@@ -135,11 +135,6 @@
       </h2>
       <section class="page-main__advantage advantage">
         <h3 class="advantage__title visually-hidden">Преимущества</h3>
-        <!--
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-          <polygon points="1200,0 0,0 0,94.074 "/>
-        </svg>
-        -->
         <div class="advantage__wrapper">
           <ul class="advantage__list">
             <li class="advantage__item advantage__item--one">
@@ -154,25 +149,32 @@
             </li>
             <li class="advantage__item advantage__item--three">
               <p class="advantage__item-title">Заводит новых друзей</p>
-              <p class="advantage__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и зводите новых</p>
+              <p class="advantage__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
         </div>
       </section>
       <aside class="page-main__promo promo">
-        <div class="promo__wrapper">
-          <h3 class="promo__title">Эффект
-            <span class="promo__title-break"></span>
-            на 24 часа!
-          </h3>
-          <p class="promo__text">
-            Британские учёные провели исследование и доказали, что положительный эффект
-            <span class="promo__text-break"></span>
-            от использования приложения длится
-            <span class="promo__text-break"></span>
-            целые сутки!
-          </p>
-          <a class="promo__link" href="#">Узнать больше об исследовании</a>
+        <div class="promo__container container">
+          <div class="promo__timer">
+            <span class="promo__timer-title">24</span>
+          </div>
+          <div class="promo__wrapper">
+            <h3 class="promo__title">Эффект
+              <span class="promo__title-break"></span>
+              на 24 часа!
+            </h3>
+            <p class="promo__text">
+              Британские учёные провели исследование и доказали,
+              <span class="promo__text-break promo__text-break--desktop"></span>
+              что положительный эффект
+              <span class="promo__text-break"></span>
+              от использования приложения длится
+              <span class="promo__text-break"></span>
+              целые сутки!
+            </p>
+            <a class="promo__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </aside>
       <section class="page-main__review review">
@@ -182,6 +184,10 @@
         <p class="review__text">
           &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии&raquo;
         </p>
+        <div class="review__switch">
+          <button class="review__switch-button review__switch-button--left" type="button" aria-label="Влево"></button>
+          <button class="review__switch-button review__switch-button--right" type="button" aria-label="Вправо"></button>
+        </div>
         <div class="review__slider">
           <button class="review__toggle review__toggle--active" type="button" aria-label="Первый слайд"></button>
           <button class="review__toggle" type="button" aria-label="Второй слайд"></button>
@@ -310,7 +316,7 @@
           <li class="contacts__item">
             <p class="contacts__item-title">Звоните:</p>
             <p class="contacts__item-contact">
-              <a class="contacts__item-link" href="tel:+78125556666">+7(812) 555-66-66</a>
+              <a class="contacts__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
           </li>
           <li class="contacts__item">

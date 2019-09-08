@@ -112,6 +112,11 @@
 
 @media (min-width: @desktop-width) {
   .page-main__title {
+    width: 734px;
+    padding: 67px 0 75px 0;
+    font-size: 50px;
+    line-height: 60px;
+
     &--inner-page {
       width: 573px;
       margin: 92px 0 88px 0;
@@ -134,9 +139,21 @@
     }
   }
 
+  .page-main__title-break {
+    display: none;
+
+    &--replay {
+      display: block;
+    }
+  }
+
   .page-main__form-contest {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 10px;
+  }
+
+  .page-main__contacts {
+    margin-bottom: 30px;
   }
 }

@@ -16,6 +16,7 @@
 .price__triangle {
   position: absolute;
   top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: auto;
@@ -246,5 +247,54 @@
 
   .price__slider {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    padding-top: 165px;
+    padding-bottom: 97px;
+  }
+
+  .price__wrapper {
+    padding: 0 10px 0 10px;
+  }
+
+  .price__table {
+    width: 100%;
+  }
+
+  .price__table-title {
+    width: 230px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .price__table-name {
+    font-size: 18px;
+  }
+
+  .price__table-price {
+    font-size: 24px;
+  }
+
+  .price__option {
+    height: 57px;
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .price__function {
+    right: 105px;
+
+    &--yes {
+      top: 20px;
+    }
+
+    &--no {
+      top: 16px;
+    }
   }
 }
