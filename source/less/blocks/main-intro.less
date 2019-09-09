@@ -8,15 +8,15 @@
   font-family: @main-font;
   background-color: unset;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+  background-repeat: no-repeat;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
+    background-repeat: no-repeat;
   }
 
   &--off {
@@ -105,7 +105,6 @@
     content: "";
     top: auto;
     bottom: 0;
-    left: -20px;
     width: 660px;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -113,12 +112,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
 
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       top: auto;
-      left: -20px;
       bottom: 0;
-      width: 700px;
+      width: 660px;
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 700px 545px;
@@ -129,7 +126,7 @@
 
   .main-intro__download {
     z-index: 10;
-    padding: 93px 400px 80px 0;
+    padding: 93px 400px 80px 20px;
     background-color: unset;
   }
 
@@ -179,22 +176,21 @@
 
   .main-intro::before {
     content: "";
-    right: 20px;
-    left: auto;
-    width: 940px;
+    right: 0;
+    width: 960px;
     height: 645px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-size: 940px 645px;
-    background-position: 0 0;
+    background-size: 1050px 645px;
+    background-position: 40px 0;
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      right: 20px;
-      left: auto;
-      width: 940px;
+      right: 0;
+      width: 960px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-size: 940px 645px;
+      background-size: 1050px 645px;
+      background-position: 40px 0;
       background-repeat: no-repeat;
     }
   }

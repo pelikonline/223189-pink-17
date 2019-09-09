@@ -46,14 +46,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 63px;
+    margin-bottom: 43px;
   }
 
   .promo__timer {
     position: relative;
     width: 238px;
     height: 276px;
-    padding: 95px 70px 0 0;
+    padding: 99px 70px 0 0;
 
     &::before {
       content: "";
@@ -104,6 +104,7 @@
 
   .promo__title {
     margin-bottom: 10px;
+    line-height: 38px;
   }
 
   .promo__title-break {
@@ -115,7 +116,11 @@
   }
 
   .promo__text-break {
-    display: block;
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 

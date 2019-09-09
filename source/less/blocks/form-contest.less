@@ -77,7 +77,7 @@
 
 .form-contest__progress-wrapper {
   padding-top: 38px;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   background-color: @lighgrey;
 }
 
@@ -105,7 +105,7 @@
 .form-contest__label-checkbox {
   position: relative;
   display: block;
-  padding: 5px 0 4px 60px;
+  padding: 5px 0 4px 70px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -329,7 +329,7 @@
 
   .form-contest__name-wrapper {
     margin-bottom: 0;
-    padding-top: 34px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
@@ -381,6 +381,10 @@
     }
   }
 
+  .form-contest__label-checkbox {
+    padding: 5px 0 4px 60px;
+  }
+
   .form-contest__platforms-wrapper {
     order: 10;
     padding-top: 7px;
@@ -402,7 +406,7 @@
 
   .form-contest__comment-wrapper {
     order: 40;
-    padding-top: 24px;
+    padding-top: 28px;
     padding-bottom: 28px;
   }
 
@@ -420,7 +424,7 @@
     padding: 0;
 
     &--progress {
-      padding: 46px 58px 6px;
+      padding: 40px 58px 6px;
       border: 2px solid @lighgrey;
       border-radius: 2px;
     }
@@ -491,7 +495,7 @@
   }
 
   .form-contest__name-wrapper {
-    padding-top: 37px;
+    padding-top: 20px;
     padding-bottom: 0;
     width: 434px;
   }
@@ -507,7 +511,7 @@
 
   .form-contest__platforms-wrapper {
     margin-left: auto;
-    padding-top: 25px;
+    padding-top: 0;
     padding-bottom: 0;
     width: 435px;
   }
@@ -560,29 +564,6 @@
     &:nth-child(6) {
       order: 2;
     }
-
-    /*
-    &:nth-child(2) {
-      order: 2;
-    }
-
-    &:nth-child(3) {
-      order: 1;
-    }
-
-    &:nth-child(4) {
-      order: 2;
-    }
-
-    &:nth-child(5) {
-      order: 1;
-    }
-
-    &:nth-child(6) {
-      order: 2;
-    }
-
-     */
   }
 
   .form-contest__fieldset {

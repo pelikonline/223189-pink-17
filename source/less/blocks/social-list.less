@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: 172px;
-  margin-right: 10px;
   font-family: @main-font;
 }
 
@@ -59,10 +58,15 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .social-list {
+    margin-right: 15px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .social-list {
-    margin-top: 5px;
-    margin-left: 15px;
+    margin: 15px 5px 0 15px;
   }
 
   .social-list__link {
