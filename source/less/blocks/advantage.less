@@ -1,21 +1,27 @@
 .advantage {
+  position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 50px 0 0 0;
   font-family: @main-font;
   background-color: @lighgrey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
-.advantage svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  fill: @white;
-}
-
-.advantage h3 {
+.advantage__title {
   margin: 0;
   padding: 0;
 }
@@ -30,30 +36,51 @@
 }
 
 .advantage__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 35px 20px 285px 20px;
   font-family: inherit;
   list-style: none;
-  border: 1px dashed green;
+  background-image: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 157px;
+    height: 320px;
+    z-index: 50;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-position: 50% 43px;
+    background-size: 157px 320px;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantage__item {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 99px;
+  margin: 0 0 15px 0;
   font-family: inherit;
   text-align: center;
 }
 
 .advantage__item-title {
+  margin: 0;
   font-family: inherit;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 }
 
 .advantage__item-text {
+  margin: 10px 0 18px 0;
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
@@ -61,6 +88,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantage {
+    &::before {
+      height: 60px;
+    }
+  }
+
   .advantage__wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -68,33 +101,183 @@
     padding: 0;
   }
 
+  .advantage__list {
+    z-index: 20;
+    align-items: flex-end;
+    padding: 24px 0 0 240px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 268px;
+      height: 547px;
+      z-index: 50;
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-position: 50% 70px;
+      background-size: 268px 547px;
+      background-repeat: no-repeat;
+    }
+  }
+
   .advantage__item {
-    width: 350px;
+    width: 310px;
+    margin-bottom: 18px;
     text-align: left;
+
+    &--three {
+      margin-bottom: 25px;
+    }
+  }
+
+  .advantage__text-break {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .advantage {
+    padding: 0;
+
+    &::before {
+      height: 130px;
+    }
+  }
+
   .advantage__wrapper {
     flex-direction: column;
     justify-content: space-between;
     width: 940px;
-    padding: 0;
+    padding: 10px 10px 0 10px;
   }
 
   .advantage__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    z-index: 20;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .advantage__item {
-    width: 200px;
-    margin-right: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .advantage__item--one {
+    position: relative;
+    width: 238px;
+    padding-top: 359px;
+  }
+
+  .advantage__item--one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -27px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-size: 292px 302px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      top: 0;
+      left: -27px;
+      width: 292px;
+      height: 302px;
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px 302px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .advantage__item--two {
+    position: relative;
+    width: 225px;
+    margin-right: 94px;
+    margin-left: 86px;
+    padding-top: 359px;
+  }
+
+  .advantage__item--two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -27px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-size: 292px 302px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      top: 0;
+      left: -27px;
+      width: 292px;
+      height: 302px;
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px 302px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .advantage__item--three {
+    position: relative;
+    width: 233px;
+    padding-top: 359px;
+  }
+
+  .advantage__item--three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -27px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-size: 292px 302px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      top: 0;
+      left: -27px;
+      width: 292px;
+      height: 302px;
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px 302px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 
   .advantage__item-title {
-    width: 130px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .advantage__item-text {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantage__text-break {
+    display: none;
   }
 
   .advantage__item-image {
