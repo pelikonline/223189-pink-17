@@ -52,6 +52,22 @@
     color: @white;
     background-color: @green;
     text-transform: uppercase;
+
+    &:hover {
+      color: @white;
+      background-color: @darkgreen;
+    }
+
+    &:active,
+    &:focus {
+      color: @grey;
+      background-color: @darkgreen;
+    }
+
+    &:disabled {
+      color: @white;
+      background-color: @ultragrey;
+    }
   }
 }
 
