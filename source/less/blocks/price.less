@@ -7,22 +7,19 @@
   font-family: inherit;
   background-color: @lighgrey;
 
-  h3 {
-    margin: 0;
-    padding: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 118px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
-}
-
-.price__triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  fill: @white;
 }
 
 .price__wrapper {
@@ -38,11 +35,12 @@
   position: relative;
   width: 834px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-696px);
   table-layout: fixed;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+  background-color: @white;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -56,11 +54,10 @@
   background-color: @navy-deep;
   border-right: 2px solid @lighgrey;
 
-  &:first-child {
-    display: none;
+  &--empty {
+    background-color: @lighgrey;
+    border: 2px solid @lighgrey;
     border-right: 0;
-    border-bottom: 2px solid @lighgrey;
-    background-color: unset;
   }
 }
 
@@ -111,7 +108,6 @@
 .price__value {
   position: relative;
   text-align: left;
-  background-color: @white;
   border: 2px solid @grey;
 }
 

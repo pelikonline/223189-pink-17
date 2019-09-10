@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff2" rel="preload" as="font">
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -91,37 +94,39 @@
           </ul>
         </div>
       </nav>
-      <section class="page-header__main-intro main-intro main-intro--off">
-        <div class="main-intro__download">
-          <h1 class="main-intro__title">
-            Взгляните на жизнь иначе!
-          </h1>
-          <a class="main-intro__button button button--download" href="https://www.apple.com/ru/ios/app-store/">
-            Скачать приложение
-          </a>
-          <ul class="download-list">
-            <li class="download-list__item download-list__item--apple">
-              <a href="https://www.apple.com/ru/ios/app-store/">
-                <img class="download-list__platform-image" src="img/logo-apple.svg" width="47" height="56" alt="Apple">
-                <span class="visually-hidden">Apple</span>
-              </a>
-            </li>
-            <li class="download-list__item download-list__item--android">
-              <a href="https://play.google.com/store">
-                <img class="download-list__platform-image" src="img/logo-android.svg" width="43" height="47" alt="Android">
-                <span class="visually-hidden">Android</span>
-              </a>
-            </li>
-            <li class="download-list__item download-list__item--windows">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-                <img class="download-list__platform-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
-                <span class="visually-hidden">Microsoft</span>
-              </a>
-            </li>
-          </ul>
-          <p class="main-intro__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+      <section class="page-header__main-intro main-intro">
+        <div class="main-intro__wrapper">
+          <div class="main-intro__download">
+            <h1 class="main-intro__title">
+              Взгляните на жизнь иначе!
+            </h1>
+            <a class="main-intro__button button button--download" href="https://www.apple.com/ru/ios/app-store/">
+              Скачать приложение
+            </a>
+            <ul class="download-list">
+              <li class="download-list__item download-list__item--apple">
+                <a href="https://www.apple.com/ru/ios/app-store/">
+                  <img class="download-list__platform-image" src="img/logo-apple.svg" width="47" height="56" alt="Apple">
+                  <span class="visually-hidden">Apple</span>
+                </a>
+              </li>
+              <li class="download-list__item download-list__item--android">
+                <a href="https://play.google.com/store">
+                  <img class="download-list__platform-image" src="img/logo-android.svg" width="43" height="47" alt="Android">
+                  <span class="visually-hidden">Android</span>
+                </a>
+              </li>
+              <li class="download-list__item download-list__item--windows">
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+                  <img class="download-list__platform-image" src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
+                  <span class="visually-hidden">Microsoft</span>
+                </a>
+              </li>
+            </ul>
+            <p class="main-intro__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
     </header>
@@ -196,14 +201,11 @@
       </section>
       <section class="page-main__price price">
         <h3 class="visually-hidden">Прайс-лист</h3>
-        <svg class="price__triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-          <polygon points="1200,0 0,0 0,94.074 "/>
-        </svg>
         <div class="price__wrapper">
           <table class="price__table">
             <tbody>
               <tr class="price__table-head">
-                <th class="visually-hidden">Прайс</th>
+                <th class="price__table-title price__table-title--empty"></th>
                 <th class="price__table-title">
                   <span class="price__table-name">База</span>
                   <span class="price__table-price">1,99 USD</span>
@@ -332,7 +334,7 @@
         </ul>
         <div class="contacts__map-wrapper">
           <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871592595!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1561634857783!5m2!1sru!2sru" allowfullscreen></iframe>
-          <picture class="contacts__map-picture">
+          <picture>
             <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта проезда">
@@ -422,5 +424,6 @@
         </div>
       </div>
     </footer>
+   <script src="js/script.min.js"></script>
   </body>
 </html>
